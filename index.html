@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <link rel="stylesheet" href="css/css.css">
+    <title>Touch The Nums</title>
+</head>
+
+<body>
+    <h1>Game Of Numbers</h1>
+
+    <button class="reset" onclick="resetGame()">Reset </button>
+    <!-- <button onclick="toggleGame(this)" >Play</button> -->
+    <div class="btn">
+        <h3>Select a difficultly level to start the game</h3>
+        <button onclick="gameInit(16)">Easy</button>
+        <button onclick="gameInit(25)">Hard</button>
+        <button onclick="gameInit(36)">Extreme</button>
+
+        <p>In order to win this game you'll need to click the buttons in a sequence (1, 2, 3, 4, … )</p>
+    </div>
+
+    <table border="1" cellpadding="10">
+        <tbody class="board"></tbody>
+
+        <div class="modal">
+
+            <h2>Timer</h2>
+        </div>
+
+        <div class="victory">
+            <h2 class="vicH2"> you are Victorious!!!</h2>
+            <button class="reset" onclick="resetGame(this)"> Play Again? </button>
+        </div>
+
+
+        <script src="js/main.js"></script>
+</body>
+
+</html>
